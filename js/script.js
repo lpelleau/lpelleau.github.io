@@ -10,4 +10,12 @@ $(document).ready(function(){
   
   $('#ct').on('click', function() {w(this);});
   $('#ct').on('tap', function() {w(this);});
+
+  setTimeout(function() {
+    $(".parallax:first img").attr("src", "img/oratoire_st-joseph.jpg");
+    window.scrollTo(0, 500);
+    setTimeout(function() {
+      window.scrollTo(0, 0);
+    }, 10);
+  }, 100);
 });
