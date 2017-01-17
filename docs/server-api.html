@@ -48,140 +48,102 @@
 				</div>
 				<div id="navbar" class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="/">Home</a></li>
+						<li><a href="/">Home</a></li>
 						<li><a href="/Demos/PooP.html">Demo</a></li>
-						<li><a href="/docs.html">Docs</a></li>
+						<li class="active"><a href="/docs.html">Docs</a></li>
 						<li><a href="/get-started.html">Get started</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>
 		</nav>
 
-		<div class="container fill" style="min-height: 750px;">
-			<div class="row full">
-				<div class="col-xs-12 full">
-					<h1 class="text-center" style="color: #777">LOIC PELLEAU 1.0 AVAILABLE IN MARCH 2017</h1>
-					<h5 class="text-center" style="color: #aaa">FEATURING THE FASTEST AND MOST RELIABLE SOFTWARE ENGINEER</h5>
-
-					<div style="text-align: center; margin-top: 100px;">
-						<div class="window editor fading hidden-xs">
-							<div class="header">
-								<span class="bullet bullet-red"></span>
-								<span class="bullet bullet-yellow"></span>
-								<span class="bullet bullet-green"></span>
-								<span class="title">~/Cripted/cipher.js</span>
-							</div>
-							<div class="body">
-								<ol class="code">
-									<li><span class="code"><span class="v">var</span> keyAscii = $('#secretInput').val();</span></li>
-									<li><span class="code"><span class="v">var</span> key = &nbsp;&nbsp;aesjs.util.convertStringToBytes(keyAscii);</span></li>
-									<li><span class="code"><span class="v">var</span> aesCtr = new aesjs.ModeOfOperation.ctr(key, &nbsp;&nbsp;new aesjs.Counter(5));</span></li>
-									<li><span class="code"><span class="v">var</span> decryptedBytes = &nbsp;&nbsp;<span class="io">aesCtr.decrypt(encryptedBytes)</span>;</span></li>
-									<li><span class="code"><span class="v">var</span> decryptedText = &nbsp;&nbsp;aesjs.util.convertBytesToString(decryptedBytes);</span></li>
-									<li><span class="code">$('#secretOutput').text(decryptedText);</span></li>
-								</ol>
-							</div>
-						</div>
-
-						<div class="window browser fading">
-							<div class="header">
-								<span class="bullet bullet-red"></span>
-								<span class="bullet bullet-yellow"></span>
-								<span class="bullet bullet-green"></span>
-								<span class="title">
-									<span class="scheme">https://</span>
-									you.com
-								</span>
-							</div>
-							<div class="body">
-								<p>What would you use to solve it? <input id="secretInput"/></p>
-								<p><strong id="secretOutput"></strong></p>
-							</div>
-						</div>
-					</div>
-
-					<div class="text-center"><i class="fa fa-chevron-down fa-4x" aria-hidden="true" style="position: absolute; bottom: 0px;"></i></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container" style="margin-top: 200px;">
+		<div class="container" style="padding-top: 113px;">
 			<div class="row">
-				<div class="col-xs-12">
-					<p class="text-center">
-						<img src="/img/profile.jpg" style="border-radius: 50%; height: 150px; position: relative; left: 13px; box-shadow: 4px 4px 5px #888888;"/>
-					</p>
-
-					<p class="text-center" style="margin-top: 100px;">
-						<i style="font-size: 1.2em;">Loic Pelleau is efficient in both Front-end and Back-end.</i><br>
-						<i>Works on every platform, browser or device, focusing equally on reliability and speed.</i>
-					</p>
+				<div id="submenu" class="col-sm-2 text-right" style="padding-top: 37px;">
+					<a href="/docs.html" style="color: grey;">Overview</a>
+					<hr/>
+					<a href="/docs/client-api.html" style="color: grey;">Client API</a><br/>
+					<a href="/docs/server-api.html" style="color: grey;"><strong>Server API</strong></a>
+					<hr/>
+					<a href="/docs/changelog.html" style="color: grey;">Changelog</a><br/>
+					<a href="/docs/faq.html" style="color: grey;">FAQ</a>
 				</div>
-			</div>
-		</div>
+				<div class="col-sm-9 col-sm-offset-1">
+					<h1>Server API</h1>
+					<h3>Languages</h3>
 
-		<div class="container" style="margin-top: 200px;">
-			<div class="row">
-				<div class="col-lg-5">
-					<div class="row">
-						<div class="col-xs-2">
-							<i class="fa fa-edit fa-5x" aria-hidden="true" style="padding-top: 20px;"></i>
-						</div>
-						<div class="col-xs-10" style="padding-left: 30px;">
-							<h2>UX-Design</h2>
-							<p>He knows the fundamentals of UI design to develop intuitive and well integrated apps.</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-5 col-lg-offset-2 ">
-					<div class="row">
-						<div class="col-xs-2">
-							<i class="fa fa-gears fa-5x" aria-hidden="true" style="padding-top: 20px;"></i>
-						</div>
-						<div class="col-xs-10" style="padding-left: 30px;">
-							<h2>Software development</h2>
-							<p>Design patterns have no secrets for him.</p>
-							<p>He loves Functionnal and Object-Oriented Programming as much as learning new tech or play with APIs</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-lg-5">
-					<div class="row">
-						<div class="col-xs-2">
-							<i class="fa fa-terminal fa-5x" aria-hidden="true" style="padding-top: 20px;"></i>
-						</div>
-						<div class="col-xs-10" style="padding-left: 30px;">
-							<h2>System</h2>
-							<p>Implemented to be efficient, he can use both Windows and Linux.</p>
-							<p>Loic Pelleau currently runs on a Debian distribution (<a href="http://deepin.org/">Deepin</a>).</p>
-							<p>He also administers a private home server with which he provides services to his roommates.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container" style="margin-top: 200px;">
-			<div class="row">
-				<div class="col-lg-6">
-					<h3>USED BY EVERYONE</h3>
+					<br/><h4>Back-End</h4>
 					<p>
-						From <a href="http://www.laita.com/en/">Laita</a>, <a href="http://www.keosys.com/">Keosys</a>
-						to <a href="https://www.sib.fr/">GIP SIB</a>, little startups or largest companies enjoy his work.
+						Loic Pelleau is not afraid to get his hands dirty.<br/>
+						<strong>Object-Oriented</strong> Programming have no secrets for him.<br/>
+						He also loves to play with <strong>Functionnal</strong> Programming.<br/><br/>
+						Here is a list of languages he has knowledge of (and like!):
+						<ul>
+							<li>Rust (One of his favorites)</li>
+							<li>Go</li>
+							<li>C++ / C</li>
+							<li>OCaml</li>
+							<li>Java</li>
+							<li>Python</li>
+							<li>Node.JS</li>
+							<li>Ruby</li>
+							<li>C#</li>
+							<li>PHP</li>
+						</ul>
+						Having to <strong>learn</strong> a new language is not an issue for Loic Pelleau.<br/>
+						<strong>Challenge</strong> is exciting!
 					</p>
-				</div>
 
-				<div class="col-lg-6">
-					<h3>IMMENSELY POWERFUL, YET EASY TO USE</h3>
-					<p>Our getting started guide will show you how to start a new experience with Loic Pelleau.</p>
-					<p>Get started <strong><a href="/get-started.html">now</a></strong>.</p>
+					<br/><h4>Front-End</h4>
+					<p>
+						In a previous version of Loic Pelleau, he had to deal with a particular type of users when developping an Android Application.
+						He learned a lot from there.<br/>
+						He knows the basic principles of UI Design.<br/>
+						Over all, he knows that a good software is a software <strong>tested</strong> by real users.<br/><br/>
+
+						He knows how to use these technologies:
+						<ul>
+							<li>Android</li>
+							<li>WPF</li>
+							<li>JQuery</li>
+							<li>Angular JS</li>
+							<li>HTML / CSS (Jade)</li>
+							<li>LaTeX (for pretty documentation)</li>
+						</ul>
+					</p>
+
+					<br/><h4>Database</h4>
+					<p>
+						The most import point in Computer Engineering is the Data.<br/>
+						Without Data, IT have no need to be.<br/>
+						That's why Loic Pelleau is conceived to be efficient in managing a Database.<br/>
+						He already used both <strong>MySQL</strong> and <strong>PostgreSQL</strong>.<br/>
+						He knows <strong>indexes</strong>' particularities enough to have an efficient database.
+					</p>
+
+					<br/>
+					<h3>Softwares</h3>
+					<p>
+						Loic Pelleau get used to most of the softwares he uses pretty quickly.<br/>
+						He knows how to use Eclipse, IntelliJ... Even <strong>VIM</strong> doesn't scare him!
+					</p>
+					<p>
+						If something he needs already exist, he prefers	 to use it and not re-invent the wheel.<br/>
+						That's why he likes to use <strong>Frameworks</strong>.<br/>
+						This web site was made with Bootstrap. He also has experience with Spring.
+					</p>
+
+					<br/>
+					<h3>Linux</h3>
+					<p>
+						Linux is a great playground for Loic Pelleau.<br/>
+						He loves trying to <strong>install</strong> and <strong>configure</strong> a new software or tool (like LXC and deployment of LXC's containers with Ansible) on his server.
+					</p>
 				</div>
 			</div>
 		</div>
 
-		<div class="container-fluid" style="margin-top: 200px; padding: 10px; background-color: #eee;">
+		<div class="container-fluid" style="padding: 10px; background-color: #ddddff;">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-right">
