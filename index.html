@@ -252,12 +252,12 @@
 						return "...";
 					}
 
-					var key = aesjs.util.convertStringToBytes(keyAscii);
+					var key = aesjs.utils.utf8.toBytes(keyAscii);
 
 					var aesCtr = new aesjs.ModeOfOperation.ctr(key, new aesjs.Counter(5));
 					var decryptedBytes = aesCtr.decrypt(encryptedBytes);
 
-					var decryptedText = aesjs.util.convertBytesToString(decryptedBytes);
+					var decryptedText = aesjs.utils.utf8.fromBytes(decryptedBytes);
 
 					return decryptedText;
 				}
